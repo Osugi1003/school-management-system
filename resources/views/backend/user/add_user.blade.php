@@ -75,6 +75,8 @@
 	
 
 </div> <!-- End Row -->
+
+ 
   
 							 
 						<div class="text-xs-right">
@@ -92,10 +94,23 @@
 		  <!-- /.box -->
 
 		</section>
+
+
+
+
+
+
+
+
+
+
  
 	  
 	  </div>
   </div>
+
+
+
 
 
 @endsection

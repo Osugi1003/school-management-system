@@ -55,6 +55,8 @@
 
 </div> <!-- End Row -->
 
+
+
     <div class="row">
 	<div class="col-md-6" >
 
@@ -68,11 +70,15 @@
 	</div> <!-- End Col Md-6 -->
 
 	<div class="col-md-6" >
+		
+ 
 
 	</div><!-- End Col Md-6 -->
 	
 
 </div> <!-- End Row -->
+
+ 
   
 							 
 						<div class="text-xs-right">
@@ -91,7 +97,15 @@
 
 		</section>
 
+ 
+
+ 
+	  
 	  </div>
   </div>
+
+
+
+
 
 @endsection
