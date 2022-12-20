@@ -12,7 +12,7 @@
 		 <!-- Basic Forms -->
 		  <div class="box">
 			<div class="box-header with-border">
-			  <h4 class="box-title">Edit Fee Category</h4>
+			  <h4 class="box-title">Add School Subject</h4>
 			  
 			</div>
 			<!-- /.box-header -->
@@ -20,7 +20,7 @@
 			  <div class="row">
 				<div class="col">
 
-	 <form method="post" action="{{ route('update.fee.category',$editData->id) }}">
+	 <form method="post" action="{{ route('store.school.subject') }}">
 	 	@csrf
 					  <div class="row">
 						<div class="col-12">	
@@ -29,9 +29,9 @@
  
 
 		<div class="form-group">
-		<h5>Fee Category Name <span class="text-danger">*</span></h5>
+		<h5>Subject Name <span class="text-danger">*</span></h5>
 		<div class="controls">
-	 <input type="text" name="name" class="form-control" value="{{ $editData->name }}" > 
+	 <input type="text" name="name" class="form-control" > 
 	 @error('name')
 	 <span class="text-danger">{{ $message }}</span>
 	 @enderror
@@ -43,7 +43,7 @@
   
 							 
 						<div class="text-xs-right">
-	 <input type="submit" class="btn btn-rounded btn-info mb-5" value="Update">
+	 <input type="submit" class="btn btn-rounded btn-info mb-5" value="Submit">
 						</div>
 					</form>
 
