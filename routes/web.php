@@ -15,6 +15,32 @@ use App\Http\Controllers\Backend\Setup\SchoolSubjectController;
 use App\Http\Controllers\Backend\Setup\AssignSubjectController;
 use App\Http\Controllers\Backend\Setup\DesignationController;
 
+use App\Http\Controllers\Backend\Student\StudentRegController;
+use App\Http\Controllers\Backend\Student\StudentRollController;
+use App\Http\Controllers\Backend\Student\RegistrationFeeController;
+use App\Http\Controllers\Backend\Student\MonthlyFeeController;
+use App\Http\Controllers\Backend\Student\ExamFeeController;
+
+use App\Http\Controllers\Backend\Employee\EmployeeRegController;
+use App\Http\Controllers\Backend\Employee\EmployeeSalaryController;
+use App\Http\Controllers\Backend\Employee\EmployeeLeaveController;
+use App\Http\Controllers\Backend\Employee\EmployeeAttendanceController;
+use App\Http\Controllers\Backend\Employee\MonthlySalaryController;
+
+use App\Http\Controllers\Backend\Marks\MarksController;
+use App\Http\Controllers\Backend\Marks\GradeController;
+
+use App\Http\Controllers\Backend\DefaultController;
+
+use App\Http\Controllers\Backend\Account\StudentFeeController;
+use App\Http\Controllers\Backend\Account\AccountSalaryController;
+use App\Http\Controllers\Backend\Account\OtherCostController;
+
+use App\Http\Controllers\Backend\Report\ProfiteController;
+use App\Http\Controllers\Backend\Report\MarkSheetController;
+use App\Http\Controllers\Backend\Report\AttenReportController;
+use App\Http\Controllers\Backend\Report\ResultReportController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -207,4 +233,43 @@ Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.d
         Route::post('assign/subject/update/{class_id}', [AssignSubjectController::class, 'UpdateAssignSubject'])->name('update.assign.subject');
 
         Route::get('assign/subject/details/{class_id}', [AssignSubjectController::class, 'DetailsAssignSubject'])->name('assign.subject.details');
+        // Designation All Routes 
+
+        Route::get('designation/view', [DesignationController::class, 'ViewDesignation'])->name('designation.view');
+
+        Route::get('designation/add', [DesignationController::class, 'DesignationAdd'])->name('designation.add');
+
+        Route::post('designation/store', [DesignationController::class, 'DesignationStore'])->name('store.designation');
+
+        Route::get('designation/edit/{id}', [DesignationController::class, 'DesignationEdit'])->name('designation.edit');
+
+        Route::post('designation/update/{id}', [DesignationController::class, 'DesignationUpdate'])->name('update.designation');
+
+        Route::get('designation/delete/{id}', [DesignationController::class, 'DesignationDelete'])->name('designation.delete');
+
+        
+
+        });
+
+        /// Student Registration Routes  
+        Route::prefix('students')->group(function(){
+
+        Route::get('/reg/view', [StudentRegController::class, 'StudentRegView'])->name('student.registration.view');
+        
+        Route::get('/reg/Add', [StudentRegController::class, 'StudentRegAdd'])->name('student.registration.add');
+        
+        Route::post('/reg/store', [StudentRegController::class, 'StudentRegStore'])->name('store.student.registration');
+        
+        Route::get('/year/class/wise', [StudentRegController::class, 'StudentClassYearWise'])->name('student.year.class.wise');
+        
+        Route::get('/reg/edit/{student_id}', [StudentRegController::class, 'StudentRegEdit'])->name('student.registration.edit');
+        
+        Route::post('/reg/update/{student_id}', [StudentRegController::class, 'StudentRegUpdate'])->name('update.student.registration');
+        
+        Route::get('/reg/promotion/{student_id}', [StudentRegController::class, 'StudentRegPromotion'])->name('student.registration.promotion');
+        
+        Route::post('/reg/update/promotion/{student_id}', [StudentRegController::class, 'StudentUpdatePromotion'])->name('promotion.student.registration');
+        
+        Route::get('/reg/details/{student_id}', [StudentRegController::class, 'StudentRegDetails'])->name('student.registration.details');
+        
         });
