@@ -7,17 +7,20 @@
 		<!-- Main content -->
 		<section class="content">
 			<div class="row">
-				<div class="col-xl-3 col-6">
+				<div class="col-xl-12 col-6">
 					<div class="box overflow-hidden pull-up">
-		<div class="box-body">							
-			<div class="icon bg-primary-light rounded w-60 h-60">
-				<i class="text-primary mr-0 font-size-24 mdi mdi-account-multiple"></i>
+		<div class="box-body">		
+		<p class="text-white mt-20 mb-0 font-size-48">Welcome To Sugiyama School!!</p>					
 			</div>
-			<div>
-				<p class="text-mute mt-20 mb-0 font-size-16">New Student</p>
-				<h3 class="text-white mb-0 font-weight-500">0 <small class="text-success"><i class="fa fa-caret-up"></i> +0%</small></h3>
-			</div>
+			
 		</div>
+		
+			<div><p class="text-white mt-20 mb-0 font-size-24">This app can easy to management your class.</p></div>
+			<div><p class="text-white mt-20 mb-0 font-size-24">1.Manage User can make and delete Admin or Oparater.</p><div>
+			<div><p class="text-white mt-20 mb-0 font-size-24">2.Setup Management can setup school.</p></div>
+			<div><p class="text-white mt-20 mb-0 font-size-24">3.Student Management can make student list and serch student.</p></div>
+
+			</div>
 	</div>
 </div>
 
