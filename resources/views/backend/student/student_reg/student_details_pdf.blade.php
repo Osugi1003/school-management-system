@@ -36,10 +36,10 @@
   <img src="{{ public_path() . $image_path }}" width="200" height="100">
 
     </h2></td>
-    <td><h2>Easy School ERP</h2>
+    <td><h2>Sugiyama School ERP</h2>
 <p>School Address</p>
-<p>Phone : 343434343434</p>
-<p>Email : support@easylerningbd.com</p>
+<p>Phone : 09076864696</p>
+<p>Email : Ryu1003@gmail.com</p>
 
     </td> 
   </tr>

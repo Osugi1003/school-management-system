@@ -96,7 +96,7 @@
 				<div class="box-body">
 					<div class="table-responsive">
 
-	@if(!@search)					
+	@if(!@$search)					
 	 <table id="example1" class="table table-bordered table-striped">
 						<thead>
 			<tr>

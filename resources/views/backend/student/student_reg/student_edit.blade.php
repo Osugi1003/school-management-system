@@ -134,9 +134,9 @@
 		<div class="controls">
 	 <select name="religion" id="religion" required="" class="form-control">
 			<option value="" selected="" disabled="">Select Religion</option>
- <option value="Islam"{{ ($editData['student']['religion'] == 'Islam')? 'selected':'' }}>Islam</option>
- <option value="Hindu"{{ ($editData['student']['religion'] == 'Hindu')? 'selected':'' }}>Hindu</option>
- <option value="Christan"{{ ($editData['student']['religion'] == 'Christan')? 'selected':'' }}>Christan</option>
+ <option value="Japan"{{ ($editData['student']['religion'] == 'Islam')? 'selected':'' }}>Japan</option>
+ <option value="America"{{ ($editData['student']['religion'] == 'Hindu')? 'selected':'' }}>America</option>
+ <option value="Chinese"{{ ($editData['student']['religion'] == 'Christan')? 'selected':'' }}>Chinese</option>
 			 
 		</select>
 	  </div>		 

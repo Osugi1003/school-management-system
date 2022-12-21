@@ -133,9 +133,9 @@
 		<div class="controls">
 	 <select name="religion" id="religion" required="" class="form-control">
 			<option value="" selected="" disabled="">Select Religion</option>
-			<option value="Japan">Japan</option>
-			<option value="America">America</option>
-			<option value="Chinese">Chinese</option>
+			<option value="Islam">Japan</option>
+			<option value="Hindu">America</option>
+			<option value="Christan">Chinese</option>
 			 
 		</select>
 	  </div>		 

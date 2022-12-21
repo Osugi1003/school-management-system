@@ -16,30 +16,6 @@ use App\Http\Controllers\Backend\Setup\AssignSubjectController;
 use App\Http\Controllers\Backend\Setup\DesignationController;
 
 use App\Http\Controllers\Backend\Student\StudentRegController;
-use App\Http\Controllers\Backend\Student\StudentRollController;
-use App\Http\Controllers\Backend\Student\RegistrationFeeController;
-use App\Http\Controllers\Backend\Student\MonthlyFeeController;
-use App\Http\Controllers\Backend\Student\ExamFeeController;
-
-use App\Http\Controllers\Backend\Employee\EmployeeRegController;
-use App\Http\Controllers\Backend\Employee\EmployeeSalaryController;
-use App\Http\Controllers\Backend\Employee\EmployeeLeaveController;
-use App\Http\Controllers\Backend\Employee\EmployeeAttendanceController;
-use App\Http\Controllers\Backend\Employee\MonthlySalaryController;
-
-use App\Http\Controllers\Backend\Marks\MarksController;
-use App\Http\Controllers\Backend\Marks\GradeController;
-
-use App\Http\Controllers\Backend\DefaultController;
-
-use App\Http\Controllers\Backend\Account\StudentFeeController;
-use App\Http\Controllers\Backend\Account\AccountSalaryController;
-use App\Http\Controllers\Backend\Account\OtherCostController;
-
-use App\Http\Controllers\Backend\Report\ProfiteController;
-use App\Http\Controllers\Backend\Report\MarkSheetController;
-use App\Http\Controllers\Backend\Report\AttenReportController;
-use App\Http\Controllers\Backend\Report\ResultReportController;
 
 
 /*
