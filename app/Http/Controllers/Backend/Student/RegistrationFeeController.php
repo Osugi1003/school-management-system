@@ -62,16 +62,12 @@ class RegistrationFeeController extends Controller
     	 	$finalfee = (float)$originalfee-(float)$discounttablefee;
 
     	 	$html[$key]['tdsource'] .='<td>'.'¥'.$finalfee.'</td>';
-    	 	
+
 
     	 }  
     	return response()->json(@$html);
 
     }// end method 
-
-
-
-
 
 
 

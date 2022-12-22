@@ -48,7 +48,7 @@ public function MonthlyFeeClassData(Request $request){
 
 
     	 foreach ($allStudent as $key => $v) {
-    	 	$registrationfee = FeeCategoryAmount::where('fee_category_id','2')->where('class_id',$v->class_id)->first();
+    	 	$registrationfee = FeeCategoryAmount::where('category_fee_id','1')->where('class_id',$v->class_id)->first();
     	 	$color = 'success';
     	 	$html[$key]['tdsource']  = '<td>'.($key+1).'</td>';
     	 	$html[$key]['tdsource'] .= '<td>'.$v['student']['id_no'].'</td>';
@@ -62,28 +62,15 @@ public function MonthlyFeeClassData(Request $request){
     	 	$discounttablefee = $discount/100*$originalfee;
     	 	$finalfee = (float)$originalfee-(float)$discounttablefee;
 
-    	 	$html[$key]['tdsource'] .='<td>'.$finalfee.'¥'.'</td>';
+    	 	$html[$key]['tdsource'] .='<td>'.'¥'.$finalfee.'</td>';
+			
 
     	 }  
     	return response()->json(@$html);
 
     }// end method 
 
-
-
-    public function MonthlyFeePayslip(Request $request){
-    	$student_id = $request->student_id;
-    	$class_id = $request->class_id;
-    	$data['month'] = $request->month;
-
-    	$data['details'] = AssignStudent::with(['student','discount'])->where('student_id',$student_id)->where('class_id',$class_id)->first();
-
-    $pdf = PDF::loadView('backend.student.monthly_fee.monthly_fee_pdf', $data);
-	$pdf->SetProtection(['copy', 'print'], '', 'pass');
-	return $pdf->stream('document.pdf');
-
-    }
-
+   
 
 
 
